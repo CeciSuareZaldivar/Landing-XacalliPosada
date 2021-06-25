@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--Metainformación-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap-->
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"/>
+    <!--Estilos-->
+    <link rel="stylesheet" href="./src/css/landing.css">
+
+    <title>Xacalli Posada</title>
+  </head>
+
+  <body>
+
+    <header class="containerHeader">
+      <nav id="navbar-example2" class="navbar navbar-expand-lg navbar navbar-light">
+        
+        <a class="nav-link" href="#home">
+          <div class="containerLogo">
+            <div class="logoImg">
+              <img src="./src/img/logoImg_Xacalli_Posada.svg" class="" alt="Logo_Xacalli_Posada">
+            </div>
+            <div class="logoTxt">
+              <img src="./src/img/logoTxt_Xacalli_Posada.svg" class="" alt="Logo_Xacalli_Posada">
+            </div>
+          </div>
+        </a>
+
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        id="buttonNav" 
+        onclick="divLogin()"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+          <ul class="nav nav-pills navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#petFriendly">Hotel Petfriendly</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#facilities">Instalaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#rooms">Cabañas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contacto</a>
+            </li>
+          </ul>
+
+        </div>
+
+      </nav>
+    </header>
+
+    <section id="home" class="separatorHome"></section>
+
+    <section class="container sectionHome">
+
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 containerHome">
+
+        <div class="col-sm-12 col-md-12 col-lg-12 itemImgHome">
+          <div class="container_card">
+            <div id="carouselHomeIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselHomeIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="7"></li>
+                <li data-target="#carouselHomeIndicators" data-slide-to="8"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./src/img/home_1_XacalliPosada.png" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_2_XacalliPosada.png" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_3_XacalliPosada.png" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_4_XacalliPosada.png" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_5_XacalliPosada.png" class="d-block w-100 " alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_6_XacalliPosada.png" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_7_XacalliPosada.png" class="d-block w-100 " alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_8_XacalliPosada.png" class="d-block w-100 " alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/home_9_XacalliPosada.png" class="d-block w-100 " alt="PetFriendly">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselHomeIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselHomeIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+        <form class="col-sm-12 col-md-12 col-lg-12 containerForm" method="post">
+          <fieldset class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 containerItemsFrom">
+            <legend class="">¿En qué fecha te gustaría hospedarte?</legend>
+
+            <div class="col-lg-4 itemForm">
+              <input id="formName" name="name" type="text" placeholder="Nombre(s)" class="form-control">
+            </div>
+
+            <div class="col-lg-4 itemForm">
+              <input id="formLastName" name="name" type="text" placeholder="Apellidos" class="form-control">
+            </div>
+
+            <div class="col-lg-4 itemForm">
+              <input id="fromPhone" name="phone" type="phone" placeholder="Teléfono" class="form-control">
+            </div>
+
+            <div class="col-lg-4 itemForm">
+              <input id="formEmail" name="email" type="email" placeholder="Email" class="form-control">
+            </div>
+
+            <div class="col-lg-4 itemForm">
+              <textarea class="form-control" id="formMessage" name="message" placeholder="¿Qué te gustaría saber?" rows="2"></textarea>
+            </div>
+
+            <div class="itemForm">
+              <div class="containerButtonForm">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
+
+      </div>
+    </section>
+
+    <section id="petFriendly" class="separatorPetFriendly"></section>
+
+    <section class="container sectionPetFriendly">
+      <h3>Hotel PetFriendly</h3>
+      <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 containerPetFriendly">
+        <div class="col-sm-12 col-md-8 col-lg-7 itemImgPetFriendly">
+          <div class="container_card">
+            <div id="carouselPetFriendlyIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="5"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="6"></li>
+                <li data-target="#carouselPetFriendlyIndicators" data-slide-to="7"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./src/img/petFriendly_1_XacalliPosada.jpg" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_2_XacalliPosada.jpg" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_3_XacalliPosada.jpg" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_4_XacalliPosada.jpg" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_5_XacalliPosada.jpg" class="d-block w-100 " alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_6_XacalliPosada.jpg" class="d-block w-100" alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_7_XacalliPosada.jpg" class="d-block w-100 " alt="PetFriendly">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/petFriendly_8_XacalliPosada.jpg" class="d-block w-100 " alt="PetFriendly">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselPetFriendlyIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselPetFriendlyIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> 
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-5 col-lg-4 itemTextPetFriendly">
+          <p>
+            Xacalli es un espacio creado para disfrutar de la naturaleza, la tranquilidad y el aire puro, en el bello pueblo mágico de Tepoztlán. 
+            Su calidez te brinda un concepto muy diferente a los hospedajes tradicionales, porque, Xacalli es sinónimo de familia, es hogar. 
+            Y en lengua Náhuatl es tu casa.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="facilities" class="separatorFacilities"></section>
+
+    <section class="container sectionFacilities">
+      <h3>Instalaciones</h3>
+      <div class="containerFacilities">
+        <ul class="nav nav-tabs navFacilities">
+          <li class="active"><button id="buttonFacilitiesShort" class="active" data-toggle="tab" href="#swimmingPool">Alberca</button></li>
+          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#jacuzzi">Jacuzzi</button></li>
+          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#dinning">Comedor</button></li>
+          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#yard">Jardín</button></li>
+          <li><button id="buttonFacilitiesLong" data-toggle="tab" href="#parkingLot">Estacionamiento</button></li>
+        </ul>
+        <div class="itemImgFacilities">
+          <div class="col-sm-12 col-md-7 col-lg-7 tab-content">
+            <div id="swimmingPool" class="tab-pane fade in active">
+              <h4 class="txtFacilities">Alberca</h4>
+              <div class="container_card">
+                <div id="carouselSwimmingPoolIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/swimmingPool_1_XacalliPosada.jpg" class="d-block w-100" alt="Alberca">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/swimmingPool_2_XacalliPosada.jpg" class="d-block w-100" alt="Alberca">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/swimmingPool_3_XacalliPosada.jpg" class="d-block w-100" alt="Alberca">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/swimmingPool_4_XacalliPosada.jpg" class="d-block w-100" alt="Alberca">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/swimmingPool_5_XacalliPosada.jpg" class="d-block w-100 " alt="Alberca">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselSwimmingPoolIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselSwimmingPoolIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>   
+              </div>
+            </div>
+
+            <div id="jacuzzi" class="tab-pane fade">
+              <h4 class="txtFacilities">Jacuzzi</h4>
+              <div class="container_card">
+                <div id="carouselJacuzziIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselJacuzziIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselJacuzziIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselJacuzziIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselJacuzziIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselJacuzziIndicators" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/jacuzzi_1_XacalliPosada.jpg" class="d-block w-100" alt="Jacuzzi">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/jacuzzi_2_XacalliPosada.jpg" class="d-block w-100" alt="Jacuzzi">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/jacuzzi_3_XacalliPosada.jpg" class="d-block w-100" alt="Jacuzzi">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/jacuzzi_4_XacalliPosada.jpg" class="d-block w-100" alt="Jacuzzi">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/jacuzzi_5_XacalliPosada.jpg" class="d-block w-100" alt="Jacuzzi">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselJacuzziIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselJacuzziIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>   
+              </div>
+            </div>
+              
+            <div id="dinning" class="tab-pane fade">
+              <h4 class="txtFacilities">Comedor / Estancia al aire libre</h4>
+              <div class="container_card">
+                <div id="carouselDinningIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselDinningIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselDinningIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselDinningIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselDinningIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselDinningIndicators" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/dinning_1_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/dinning_2_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/dinning_3_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/dinning_4_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/dinning_5_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselDinningIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselDinningIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>  
+              </div>
+            </div>
+             
+            <div id="yard" class="tab-pane fade">
+              <h4 class="txtFacilities">Jardín</h4>
+              <div class="container_card">
+                <div id="carouselYardIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselYardIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselYardIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselYardIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselYardIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselYardIndicators" data-slide-to="4"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/yard_1_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Jardin">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/yard_2_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Jardin">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/yard_3_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Jardin">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/yard_4_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Jardin">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/yard_5_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Jardin">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselYardIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselYardIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>   
+              </div>
+            </div>
+              
+            <div id="parkingLot" class="tab-pane fade"> 
+              <h4 class="txtFacilities">Estacionamiento</h4>
+              <div class="container_card">
+                <div id="carouselparkingLotIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselparkingLotIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselparkingLotIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselparkingLotIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/parkingLot_1_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Estacionamiento">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/parkingLot_2_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Estacionamiento">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/parkingLot_3_XacalliPosada.jpg" class="d-block w-100 img_datos" alt="Estacionamiento">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselparkingLotIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselparkingLotIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div> 
+              </div>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="separatorServices"></section>
+
+    <section class="container sectionServices">
+      <h3>Servicios</h3>
+      <div class="row row-cols-1 row-cols-md-4 row-cols-lg-3 containerServices">
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconGrill.png" class="card-img-top" alt="Asador">
+          <div class="card-body">
+            <h5 class="card-title">Asador</h5>
+            <p class="card-text">No hay mejor manera de convivir que con una deliciosa comida, mejor aún, si es una carne asada en el jardín.</p>
+            <h5>$ 200</h5>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconCamping.png" class="card-img-top" alt="Camping">
+          <div class="card-body">
+            <h5 class="card-title">Camping</h5>
+            <p class="card-text">Transforma la clásica escapada de fin de semana en una más original y divertida.</p>
+            <h5>$ 0</h5>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconBreakfast.png" class="card-img-top" alt="Breakfast">
+          <div class="card-body">
+            <h5 class="card-title">Desayuno Americano</h5>
+            <p class="card-text"> Comienza bien el día con un delicioso desayuno. <br> Jugo de temporada, fruta, huevos al gusto y café</p>
+            <h5>$ 150* </h5>
+            <h7>*Precio por persona </h7>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconBonfire.png" class="card-img-top" alt="Fogata">
+          <div class="card-body">
+            <h5 class="card-title">Fogata</h5>
+            <p class="card-text">Siéntate en torno a una fogata nocturna, comparte historias y asa malvaviscos bajo el cielo más estrellado que hayas visto jamás.</p>
+            <h5>$ 400</h5>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconHiking.png" class="card-img-top" alt="Hiking">
+          <div class="card-body">
+            <h5 class="card-title">Hiking</h5>
+            <p class="card-text">Escápate de la rutina de la ciudad y conéctate con la naturaleza.</p>
+            <h5>$ 100*</h5>
+            <h7>*Precio por persona </h7>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconMassage.png" class="card-img-top" alt="Masaje">
+          <div class="card-body">
+            <h5 class="card-title">Masaje</h5>
+            <p class="card-text">Masaje relajante que te transportará a una atmósfera de paz y tranquilidad</p>
+            <h5>$ 600*</h5>
+            <h7>*Precio por persona </h7>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconTelescope.png" class="card-img-top" alt="Telescopio">
+          <div class="card-body">
+            <h5 class="card-title">Telescopio</h5>
+            <p class="card-text">Al estar apartados de las zonas urbanas es un lugar ideal para dejarse deslumbrar por las estrellas al caer la noche.</p>
+            <h5>$ 0</h5>
+          </div>
+        </div>
+        <div class="col-11 col-sm-10 col-md-5 col-lg-4 card cardService">
+          <img src="./src/img/iconWifi.png" class="card-img-top" alt="Wifi">
+          <div class="card-body">
+            <h5 class="card-title">Wifi</h5>
+            <p class="card-text">...</p>
+            <h5>$ 0</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="rooms" class="separatorRooms"></section>
+
+    <section class="container sectionRooms">
+      <h3>Cabañas</h3>
+      <div class="containerRooms">
+        <ul class="nav nav-tabs navRoom">
+          <li class="active"><button id="buttonRooms" data-toggle="tab" href="#roomSimple">Simple</button></li>
+          <li><button id="buttonRooms" data-toggle="tab" href="#roomDuplex">Dúplex</button></li>
+        </ul>
+        <div class="tab-content">
+          <div id="roomSimple" class="tab-pane fade in active containerRoomSimple">
+            <h4>Simple</h4>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 itemRoomSimple"> 
+              <div class="col-sm-12 col-md-4 col-lg-3 containerItemFeatures">
+                <div class="itemFeatures">
+                  <div class="containerFeatures">
+                    <p>Cada cabaña tiene:</p>
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconBedroom.svg" class="imgRoom" alt="Cama">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Cama Matrimonial
+                      </div>
+                    </div>
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconBath.png" class="imgRoom" alt="Baño">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Baño Completo
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconCloset.png" class="imgRoom" alt="Closet">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Pequeño Clóset
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconDesk.png" class="imgRoom" alt="Escritorio">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Escritorio con silla
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconTV.png" class="imgRoom" alt="TV">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        TV (Con señal satelital)
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconDVD.png" class="imgRoom" alt="DVD">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        DVD
+                      </div>
+                    </div>
+                    <div class="roomTxtPrice">
+                      <p>$1,300.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+                
+              <div class="col-sm-12 col-md-7 col-lg-7 container_card itemImgRoomSimple">
+                <div id="carouselSimpleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselSimpleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselSimpleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselSimpleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselSimpleIndicators" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/roomSimple_1_XacalliPosada.png" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomSimple_2_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomSimple_3_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomSimple_4_XacalliPosada.png" class="d-block w-100" alt="Comedor">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselSimpleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselSimpleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div id="roomDuplex" class="tab-pane fade containerRoomDuplex">
+            <h4>Dúplex</h4>
+            <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 itemRoomDuplex">
+              <div class="col-sm-12 col-md-4 col-lg-3 containerItemFeatures">
+                <div class="itemFeatures">
+                  <div class="containerFeatures">
+                    <p>Cada cabaña tiene:</p>
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconBedroom.svg" class="imgRoom" alt="Cama">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Cama Matrimonial e Individual
+                      </div>
+                    </div>
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconBath.png" class="imgRoom" alt="Baño">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Baño Completo
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconCloset.png" class="imgRoom" alt="Closet">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Pequeño Clóset
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconDesk.png" class="imgRoom" alt="Escritorio">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        Escritorio con silla
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconTV.png" class="imgRoom" alt="TV">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        TV (Con señal satelital)
+                      </div>
+                    </div>
+
+                    <div class="containerGroupFeaturesService">
+                      <div class="containerImgFeaturesService">
+                        <img src="./src/img/iconDVD.png" class="imgRoom" alt="DVD">
+                      </div>
+                      <div class="containerTxtFeaturesService">
+                        DVD
+                      </div>
+                    </div>
+                    <div class="roomTxtPrice">
+                      <p>$1,600.00</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="col-sm-12 col-md-7 col-lg-7 container_card itemImgRoomDuplex">
+                <div id="carouselDuplexIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselDuplexIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselDuplexIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselDuplexIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselDuplexIndicators" data-slide-to="3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./src/img/roomDuplex_1_XacalliPosada.png" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomDuplex_2_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomDuplex_3_XacalliPosada.jpg" class="d-block w-100" alt="Comedor">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./src/img/roomDuplex_4_XacalliPosada.png" class="d-block w-100" alt="Comedor">
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselDuplexIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselDuplexIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="separatorContact"></section>
+
+    <section class="container sectionContact">
+      <h3>Contacto</h3>
+      <div class="row row-cols-sm-2 containerContact">
+        <div class="col-sm-12 col-md-6 col-lg-5 containerMaps">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d30183.35043010253!2d-99.073239!3d18.979193!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x425983662d91e052!2sXacalli%20Posada!5e0!3m2!1ses-419!2smx!4v1623908374179!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-6 containerData">
+          <div class="containerItemData">
+            <div class="containerItemGroupData">
+              <div class="containerImgData">
+                <a href="https://bit.ly/Ubicacion_XacalliPosada" target="_blank">
+                  <img src="./src/img/iconLocation.png" class="" alt="icono_ubicacion">
+                </a>
+              </div>
+              <div class="containerTxtData">
+                <p>Callejón s/n Col De, Teminas, Ixcatepec, 62525 Tepoztlán, Mor.</p>
+              </div>
+            </div>
+
+            <div class="containerItemGroupData">
+              <div class="containerImgData">
+                <img src="./src/img/iconPhone.png" class="" alt="icono_telefono">
+              </div>
+              <div class="containerTxtData">
+                <p>777 190 8945</p>
+              </div>
+            </div>
+
+            <div class="containerItemGroupData">
+              <div class="containerImgData">
+                <a href="https://bit.ly/Info_XacalliPosada" target="_blank">
+                  <img src="./src/img/iconWhatsApp_XacalliPosada.png" class="" alt="WhatsApp_Xacalli_Posada">
+                </a>
+              </div>
+              <div class="containerTxtData">
+                <p>+52 56 2392 6208</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="col-lg-12 containerFooter">
+      <div class="containerTxtFooter">
+        <p>Xacalli Posada. Todos los derechos reservados 2021.</p>
+      </div>
+      <div class="containerSocialMediaFooter">
+        <a href="https://bit.ly/Fb_XacalliPosada" target="_blank"> 
+          <img src="./src/img/iconFacebook_XacalliPosada.png" class="imgSocialMedia" alt="Facebook_Xacalli_Posada">
+        </a>
+        <a href="https://bit.ly/InstagramXacalli" target="_blank"> 
+          <img src="./src/img/iconInstagram_XacalliPosada.png" class="imgSocialMedia" alt="Instagram_Xacalli_Posada">
+        </a>
+        <a href="https://bit.ly/Info_XacalliPosada" target="_blank">
+          <img src="./src/img/iconWhatsApp_XacalliPosada.png" class="imgSocialMedia" alt="WhatsApp_Xacalli_Posada">
+        </a>
+      </div>
+    </footer>
+
+    
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous">
+    </script>
+
+    <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous">
+    </script>
+
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous">
+    </script>
+  </body>
+</html>

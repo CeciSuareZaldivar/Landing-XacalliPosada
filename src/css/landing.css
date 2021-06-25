@@ -1,0 +1,427 @@
+body {
+    background: #FF5F6D;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+body > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/*Container Nav*/
+.navbar{
+    background-color: #FFDCB8;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    color: black;
+}
+
+.containerLogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoImg{
+    width: 75px;
+}
+
+.logoTxt{
+    width: 150px;
+}
+
+.nav{
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-link{
+    color: black;
+}
+
+/*Section Home*/
+.separatorHome {
+    padding-top: 55px;
+}
+
+.sectionHome {
+    background-color: #FDFFBC;
+}
+
+.sectionHome > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.containerHome{
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerHome > *{
+    margin: 10px;
+}
+
+.itemImgHome{
+   background-color: #FFEEBB;
+    border-radius: 25px;
+}
+
+.containerForm{
+    padding: 10px;
+}
+
+.containerItemsFrom{
+    align-items: center;
+    justify-content: center;
+}
+
+.itemForm {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemForm > *{
+    margin: 10px;
+}
+
+/*Section PetFriendly*/
+.separatorPetFriendly {
+    padding-top: 140px;
+}
+
+.sectionPetFriendly {
+    padding-top: 25px;
+    background-color:  #FFC1B6; 
+    border-radius: 25px;
+}
+
+.sectionPetFriendly > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerPetFriendly{
+    display:flex;
+    justify-content: space-around;
+    margin: 1px;
+}
+
+.containerPetFriendly > * {
+    padding: 15px;
+    margin: 15px;
+}
+
+/*Section Facilities*/
+.separatorFacilities {
+    padding-top: 140px;
+}
+
+.sectionFacilities {
+    padding-top: 25px;
+    padding: 20px;
+    background-color: #FFDCB8;
+    border-radius: 25px;
+}
+
+.sectionFacilities > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerFacilities > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.navFacilities > * {
+    margin: 10px;
+}
+
+#buttonFacilitiesShort{
+    background-color: #FFDCB8;
+    border-radius: 8px;
+    border: 0;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+}
+
+#buttonFacilitiesLong{
+    background-color: #FFDCB8;
+    border-radius: 8px;
+    border: 0;
+    width: 150px;
+    height: 30px;
+    text-align: center;
+}
+
+.itemImgFacilities{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.txtFacilities{
+    min-width: 360px;
+}
+
+.tab-pane> * {
+    padding: 10px;
+}
+
+/*Section Services*/
+.separatorServices {
+    padding-top: 100px;
+}
+
+.sectionServices {
+    padding-top: 25px;
+}
+
+.sectionServices > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 15px;
+}
+
+.containerServices{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerServices > * {
+    margin: 15px;
+}
+
+.cardService{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFC1B6;
+}
+
+.cardService > * {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-body{
+    display: inline-block;
+    background-color: aquamarine;
+}
+
+.card-body > * {
+    align-items: center;
+    justify-content: center;
+}
+
+.card-img-top{
+    width: 85px;
+}
+
+.card-title{
+    text-align: center;
+    background-color: bisque;
+}
+
+/*Section Rooms*/
+.separatorRooms {
+    padding-top: 140px;
+}
+
+.sectionRooms {
+    background-color: #FFDCB8;
+    padding-top: 25px;
+    padding: 20px;
+}
+
+.sectionRooms > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+}
+
+.containerRooms{
+    display: block;
+}
+
+.containerRooms > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5px;
+}
+
+.navRoom> * {
+    margin: 5px;
+}
+
+.tab-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemRoomSimple, .itemRoomDuplex {
+    display:flex;
+    justify-content: space-around;
+}
+
+.itemRoomSimple> * , .itemRoomDuplex  > *{
+    padding: 8px;
+}
+
+.containerItemFeatures{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemFeatures {
+    padding: 15px;
+}
+
+.containerGroupFeaturesService{
+    display: flex;
+    padding-left: 15px;
+}
+
+.containerGroupFeaturesService > *{
+    align-items: center;
+    justify-content: center;
+}
+
+.containerGroupFeaturesService > *{
+    margin: 8px;
+}
+
+.containerImgFeaturesService{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerTxtFeaturesService{
+    text-align: left;
+}
+
+.imgRoom{
+    width: 35px;
+}
+
+.roomTxtPrice{
+    display: inline-block;
+    margin: 15px;
+    height: 25px;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+}
+
+/*Section Contact*/
+.separatorContact {
+    padding-top: 130px;
+}
+
+.sectionContact {
+    background-color: #FFDCB8;
+    padding-top: 25px;
+}
+
+.sectionContact > * {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.containerContact{
+    display:flex;
+    justify-content: space-around;
+}
+
+.containerContact > * {
+    padding: 15px;
+    margin: 10px;
+}
+
+.containerMaps {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerData {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.containerItemData{
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.containerItemGroupData{
+    display: flex;
+}
+
+.containerItemGroupData > *{
+    margin: 7px;
+}
+
+.containerTxtData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+}
+
+/*Footer*/
+.containerFooter{
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+    background-color: #FFC1B6;
+}
+
+.containerFooter > *{
+    padding: 3px;
+}
+
+.containerTxtFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerSocialMediaFooter{
+    display: flex;
+}
+
+.containerSocialMediaFooter > *{
+    margin: 10px;
+}
+
+.imgSocialMedia{
+    width: 50px;
+}
