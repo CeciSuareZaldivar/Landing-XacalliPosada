@@ -176,9 +176,6 @@ body > * {
     justify-content: center;
 }
 
-.txtFacilities{
-    min-width: 360px;
-}
 
 .tab-pane> * {
     padding: 10px;
@@ -280,6 +277,18 @@ body > * {
     justify-content: center;
 }
 
+.itemImgRoomSimple{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.itemRoomDuplex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .itemRoomSimple, .itemRoomDuplex {
     display:flex;
     justify-content: space-around;
@@ -297,6 +306,8 @@ body > * {
 
 .itemFeatures {
     padding: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .containerGroupFeaturesService{

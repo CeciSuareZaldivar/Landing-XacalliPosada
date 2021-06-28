@@ -13,7 +13,7 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
     crossorigin="anonymous"/>
     <!--Estilos-->
-    <link rel="stylesheet" href="./src/css/landing.css">
+    <link rel="stylesheet" href="./src/css/index.css">
 
     <title>Xacalli Posada</title>
   </head>
@@ -240,19 +240,91 @@
     <section class="container sectionFacilities">
       <h3>Instalaciones</h3>
       <div class="containerFacilities">
-        <ul class="nav nav-tabs navFacilities">
-          <li class="active"><button id="buttonFacilitiesShort" class="active" data-toggle="tab" href="#swimmingPool">Alberca</button></li>
-          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#jacuzzi">Jacuzzi</button></li>
-          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#dinning">Comedor</button></li>
-          <li><button id="buttonFacilitiesShort" data-toggle="tab" href="#yard">Jardín</button></li>
-          <li><button id="buttonFacilitiesLong" data-toggle="tab" href="#parkingLot">Estacionamiento</button></li>
+        <ul 
+        class="nav nav-tabs navFacilities" 
+        id="myTab" 
+        role="tablist"
+        >
+          <li class="nav-item">
+            <a 
+            class="nav-link active"
+            id="swimmingPool-tab"
+            data-toggle="tab"
+            href="#swimmingPool"
+            role="tab"
+            aria-controls="swimmingPool"
+            aria-selected="true" 
+            >
+              Alberca
+            </a>
+          </li>
+          <li>
+            <a 
+            class="nav-link"
+            id="jacuzzi-tab"
+            data-toggle="tab"
+            href="#jacuzzi"
+            role="tab"
+            aria-controls="jacuzzi"
+            aria-selected="false" 
+            >
+              Jacuzzi
+            </a>
+          </li>
+          <li>
+            <a 
+            class="nav-link"
+            id="dinning-tab"
+            data-toggle="tab"
+            href="#dinning"
+            role="tab"
+            aria-controls="dinning"
+            aria-selected="false" 
+            >
+              Comedor
+            </a>
+          </li>
+          <li>
+            <a 
+            class="nav-link"
+            id="yard-tab"
+            data-toggle="tab"
+            href="#yard"
+            role="tab"
+            aria-controls="yard"
+            aria-selected="false" 
+            >
+              Jardín
+            </a>
+          </li>
+          <li>
+            <a 
+            class="nav-link"
+            id="yard-tab"
+            data-toggle="tab"
+            href="#parkingLot"
+            role="tab"
+            aria-controls="yard"
+            aria-selected="false" 
+            >
+              Estacionamiento
+            </a>
+          </li>
         </ul>
-        <div class="itemImgFacilities">
+        <div class="itemImgFacilities" id="myTabContent">
           <div class="col-sm-12 col-md-7 col-lg-7 tab-content">
-            <div id="swimmingPool" class="tab-pane fade in active">
-              <h4 class="txtFacilities">Alberca</h4>
+            <div  
+            class="tab-pane fade show active"
+            id="swimmingPool"
+            role="tabpanel" 
+            aria-labelledby="swimmingPool-tab"
+            >
               <div class="container_card">
-                <div id="carouselSwimmingPoolIndicators" class="carousel slide" data-ride="carousel">
+                <div 
+                id="carouselSwimmingPoolIndicators" 
+                class="carousel slide" 
+                data-ride="carousel"
+                >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselSwimmingPoolIndicators" data-slide-to="1"></li>
@@ -289,10 +361,18 @@
               </div>
             </div>
 
-            <div id="jacuzzi" class="tab-pane fade">
-              <h4 class="txtFacilities">Jacuzzi</h4>
+            <div 
+            class="tab-pane fade"
+            id="jacuzzi"
+            role="tabpanel" 
+            aria-labelledby="jacuzzi-tab"
+            >
               <div class="container_card">
-                <div id="carouselJacuzziIndicators" class="carousel slide" data-ride="carousel">
+                <div 
+                id="carouselJacuzziIndicators" 
+                class="carousel slide" 
+                data-ride="carousel"
+                >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselJacuzziIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselJacuzziIndicators" data-slide-to="1"></li>
@@ -329,10 +409,18 @@
               </div>
             </div>
               
-            <div id="dinning" class="tab-pane fade">
-              <h4 class="txtFacilities">Comedor / Estancia al aire libre</h4>
+            <div 
+            class="tab-pane fade"
+            id="dinning" 
+            role="tabpanel" 
+            aria-labelledby="dinning-tab"
+            >
               <div class="container_card">
-                <div id="carouselDinningIndicators" class="carousel slide" data-ride="carousel">
+                <div 
+                id="carouselDinningIndicators" 
+                class="carousel slide" 
+                data-ride="carousel"
+                >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselDinningIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselDinningIndicators" data-slide-to="1"></li>
@@ -369,10 +457,18 @@
               </div>
             </div>
              
-            <div id="yard" class="tab-pane fade">
-              <h4 class="txtFacilities">Jardín</h4>
+            <div 
+            class="tab-pane fade"
+            id="yard"  
+            role="tabpanel" 
+            aria-labelledby="yard-tab"
+            >
               <div class="container_card">
-                <div id="carouselYardIndicators" class="carousel slide" data-ride="carousel">
+                <div 
+                id="carouselYardIndicators" 
+                class="carousel slide" 
+                data-ride="carousel"
+                >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselYardIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselYardIndicators" data-slide-to="1"></li>
@@ -409,10 +505,18 @@
               </div>
             </div>
               
-            <div id="parkingLot" class="tab-pane fade"> 
-              <h4 class="txtFacilities">Estacionamiento</h4>
+            <div 
+            class="tab-pane fade"
+            id="parkingLot"  
+            role="tabpanel" 
+            aria-labelledby="parkingLot-tab"
+            > 
               <div class="container_card">
-                <div id="carouselparkingLotIndicators" class="carousel slide" data-ride="carousel">
+                <div 
+                id="carouselparkingLotIndicators" 
+                class="carousel slide" 
+                data-ride="carousel"
+                >
                   <ol class="carousel-indicators">
                     <li data-target="#carouselparkingLotIndicators" data-slide-to="0" class="active"></li>
                     <li data-target="#carouselparkingLotIndicators" data-slide-to="1"></li>
@@ -470,7 +574,7 @@
           <img src="./src/img/iconBreakfast.png" class="card-img-top" alt="Breakfast">
           <div class="card-body">
             <h5 class="card-title">Desayuno Americano</h5>
-            <p class="card-text"> Comienza bien el día con un delicioso desayuno. <br> Jugo de temporada, fruta, huevos al gusto y café</p>
+            <p class="card-text"> Comienza bien el día con un delicioso desayuno. Jugo de temporada, fruta, huevos al gusto y café</p>
             <h5>$ 150* </h5>
             <h7>*Precio por persona </h7>
           </div>
@@ -525,13 +629,45 @@
     <section class="container sectionRooms">
       <h3>Cabañas</h3>
       <div class="containerRooms">
-        <ul class="nav nav-tabs navRoom">
-          <li class="active"><button id="buttonRooms" data-toggle="tab" href="#roomSimple">Simple</button></li>
-          <li><button id="buttonRooms" data-toggle="tab" href="#roomDuplex">Dúplex</button></li>
+        <ul 
+        class="nav nav-tabs navRoom"
+        id="myTab" 
+        role="tablist"
+        >
+          <li class="active">
+            <a 
+            class="nav-link active"
+            id="roomSimple-tab"
+            data-toggle="tab"
+            href="#roomSimple"
+            role="tab"
+            aria-controls="roomSimple"
+            aria-selected="true" 
+            >
+              Simple
+            </a>
+          </li>
+          <li>
+            <a 
+            class="nav-link"
+            id="roomDuplex-tab"
+            data-toggle="tab"
+            href="#roomDuplex"
+            role="tab"
+            aria-controls="roomDuplex"
+            aria-selected="true" 
+            >
+            Dúplex
+            </a>
+          </li>
         </ul>
-        <div class="tab-content">
-          <div id="roomSimple" class="tab-pane fade in active containerRoomSimple">
-            <h4>Simple</h4>
+        <div class="tab-content" id="myTabContent">
+          <div 
+          class="tab-pane fade show active containerRoomSimple"
+          id="roomSimple" 
+          role="tabpanel" 
+          aria-labelledby="roomSimple-tab"
+          >
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 itemRoomSimple"> 
               <div class="col-sm-12 col-md-4 col-lg-3 containerItemFeatures">
                 <div class="itemFeatures">
@@ -631,8 +767,12 @@
             </div>
           </div>
 
-          <div id="roomDuplex" class="tab-pane fade containerRoomDuplex">
-            <h4>Dúplex</h4>
+          <div 
+          class="tab-pane fade containerRoomDuplex"
+          id="roomDuplex" 
+          role="tabpanel" 
+          aria-labelledby="roomDuplex-tab"
+          >
             <div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 row-cols-lg-2 itemRoomDuplex">
               <div class="col-sm-12 col-md-4 col-lg-3 containerItemFeatures">
                 <div class="itemFeatures">
