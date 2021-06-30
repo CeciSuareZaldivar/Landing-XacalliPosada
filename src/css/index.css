@@ -1,8 +1,8 @@
 body {
-    background: #FF5F6D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #FFC371, #FF5F6D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #FFC371, #FF5F6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}    
 
 body > * {
     align-items: center;
@@ -12,7 +12,7 @@ body > * {
 
 /*Container Nav*/
 .navbar{
-    background-color: #FFDCB8;
+    background-color: #fbd786;
     justify-content: space-between;
     width: 100%;
     position: fixed;
@@ -49,10 +49,6 @@ body > * {
     padding-top: 55px;
 }
 
-.sectionHome {
-    background-color: #FDFFBC;
-}
-
 .sectionHome > * {
     align-items: center;
     justify-content: center;
@@ -61,6 +57,7 @@ body > * {
 }
 
 .containerHome{
+    margin-top: 15px;
     display: flex;
     justify-content: space-around;
 }
@@ -70,7 +67,8 @@ body > * {
 }
 
 .itemImgHome{
-   background-color: #FFEEBB;
+    background: #f9b182;  
+    background-size: cover;
     border-radius: 25px;
 }
 
@@ -100,7 +98,6 @@ body > * {
 
 .sectionPetFriendly {
     padding-top: 25px;
-    background-color:  #FFC1B6; 
     border-radius: 25px;
 }
 
@@ -122,6 +119,10 @@ body > * {
     margin: 15px;
 }
 
+.itemTextPetFriendly{
+    text-align: left;
+}
+
 /*Section Facilities*/
 .separatorFacilities {
     padding-top: 140px;
@@ -130,7 +131,6 @@ body > * {
 .sectionFacilities {
     padding-top: 25px;
     padding: 20px;
-    background-color: #FFDCB8;
     border-radius: 25px;
 }
 
@@ -152,23 +152,6 @@ body > * {
     margin: 10px;
 }
 
-#buttonFacilitiesShort{
-    background-color: #FFDCB8;
-    border-radius: 8px;
-    border: 0;
-    width: 100px;
-    height: 30px;
-    text-align: center;
-}
-
-#buttonFacilitiesLong{
-    background-color: #FFDCB8;
-    border-radius: 8px;
-    border: 0;
-    width: 150px;
-    height: 30px;
-    text-align: center;
-}
 
 .itemImgFacilities{
     display: flex;
@@ -211,7 +194,10 @@ body > * {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #FFC1B6;
+    background-color: #f9b983;
+    border-radius: 10px;
+    border: 0;
+    padding: 10px;
 }
 
 .cardService > * {
@@ -221,7 +207,6 @@ body > * {
 
 .card-body{
     display: inline-block;
-    background-color: aquamarine;
 }
 
 .card-body > * {
@@ -235,7 +220,6 @@ body > * {
 
 .card-title{
     text-align: center;
-    background-color: bisque;
 }
 
 /*Section Rooms*/
@@ -244,9 +228,10 @@ body > * {
 }
 
 .sectionRooms {
-    background-color: #FFDCB8;
     padding-top: 25px;
     padding: 20px;
+    border-radius: 25px;
+    background-color: #d1e9ab;
 }
 
 .sectionRooms > * {
@@ -354,7 +339,6 @@ body > * {
 }
 
 .sectionContact {
-    background-color: #FFDCB8;
     padding-top: 25px;
 }
 
@@ -412,7 +396,7 @@ body > * {
     display: flex;
     padding: 10px;
     justify-content: space-around;
-    background-color: #FFC1B6;
+    background-color: #fbd786;
 }
 
 .containerFooter > *{
